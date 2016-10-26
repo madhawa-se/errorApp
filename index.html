@@ -14,6 +14,8 @@
             function onDeviceReady()
             {
                 window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFileSystemSuccess, fail);
+                var appDir=cordova.file.applicationDirectory;
+                alert(appDir);
             }
 
             function onFileSystemSuccess(fileSystem) {
